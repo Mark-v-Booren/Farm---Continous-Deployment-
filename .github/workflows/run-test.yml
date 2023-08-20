@@ -21,6 +21,6 @@ jobs:
         with:
           host: ${{ secrets.161.35.19.72 }}
           username: ${{ secrets.Mark-v-Booren }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY}}
           script: |
             sh /path/to/deploy.sh
