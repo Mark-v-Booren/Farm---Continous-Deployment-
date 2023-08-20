@@ -16,35 +16,4 @@ jobs:
       - name: Run tests
         run: pytest
 
-name: Update Repository
 
-on:
-  push:
-    branches:
-      - main  # Or your preferred branch
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa 161.35.19.72 >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-      - name: Update repository on VPS
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@github.com"
-          git pull origin main
-          # Additional deployment steps
-
-      - name: Cleanup SSH key
-        run: rm ~/.ssh/id_rsa
