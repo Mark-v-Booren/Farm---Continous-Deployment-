@@ -20,10 +20,10 @@ def test_rooster(client):
     response = client.get("/rooster")
 
     assert response.status_code == 200
-    assert response.data == b"Kukeleeekuuu! "
+    assert response.data == b"Kukeleeekuuu!"
 
-def test_rooster(client):
+def test_mice(client):
     response = client.get("/mice")
 
     assert response.status_code == 200
-    assert response.data == b"Cheese! "
+    assert response.data == b"Cheese!"
