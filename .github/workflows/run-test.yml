@@ -16,11 +16,3 @@ jobs:
       - name: Run tests
         run: pytest
 
-      - name: Deploy to VPS
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.161.35.19.72 }}
-          username: ${{ secrets.markvbooren@protonmail.com }}
-          key: ${{ secrets.SSH_PRIVATE_KEY}}
-          script: |
-            sh /home/farm.sh
