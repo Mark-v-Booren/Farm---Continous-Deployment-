@@ -1,6 +1,25 @@
 # farm
 Module 8 : Winc-assignment : VPS => continous deployment, git actions, ssh secrets
 
+beschrijving van de opdracht :
+
+Creating and provisioning a server at Digital Ocean;
+Connecting to a Linux server over SSH;
+Running basic terminal commands on a Linux server;
+Deploying a Flask application on a Linux server.
+
+componenten:
+
+1 Het aanmaken van de droplet via Digital Ocean ging snel maar het navigeren op de VPS zelf kostte meer tijd.
+Het navigeren naar de default HTML om daar de FLask-app actief te krijgen duurde een tijd voordat ik het door had.
+2 Gunicorn installeren ging snel via de pip install gunicorn --upgrade. Maar daanra kreeg ik veel errors. Door de status te testen in VPS zag ik dat hij wél actief staat. 
+Door de functie command /usr/local/bin/gunicorn --bind 0.0.0.0 --chdir /home/farm main:app werkte Gunicorn uiteiendelijk wel.
+3 De flask installatie kon ik goed testen via github. Ik koos de tests dmv het zoeken naar de juiste route van de pagina's zoals route @mice 
+
+problemen:
+1
+2
+3
 
 Het creëren van een VPS deploy via Digital Ocean vond ik erg intrigerend en interessant. De systax en workflow in de VPS environment was in het begin erg wennen maar uiteindelijk juist heel effectief en krachtig.
 Zoals veel andere opdrachten moest ik hier echt de tijd voor nemen om de lesstof en de 'stappen' goed te kunnen plaatsen. In de modules komt veel snel achter alkaar aan bod en om dat goed 'visueel' te volgen was een echte uitdaging. Nginx en Gunicorn bijvoorbeeld. Eigenlijk gebeurt er met een paar stappen heel veel achter de schermen waar ik graag overzicht van probeerde te krijgen. Het manoevreren tussen github naar de VPS, die als default dient werken op het gegeven IP adres was zeker veel gepuzzel. Maar zoals ik merk tijdens coderen is dat de stappen rustig moeten worden gedaan. 
