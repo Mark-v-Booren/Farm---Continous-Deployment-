@@ -49,7 +49,9 @@ Wanneer de oplossing via je Bash, VPS óf github zelf was af en toe een echte pu
 Uiteindelijk is het superfascinerend dat het werkt en ook logisch.
 
 
-
+http://161.35.19.72
+http://161.35.19.72/cow
+http://161.35.19.72/mice
 
 
 
