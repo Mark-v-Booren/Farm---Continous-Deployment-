@@ -17,9 +17,6 @@ jobs:
         run: pytest
 
 
-
-
-
   deploy:
     needs: run-test
     runs-on: ubuntu-latest
