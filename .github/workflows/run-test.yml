@@ -30,4 +30,5 @@ jobs:
           script: |
             cd /home/farm/
             git pull
-            systemctl restart nginx
+            systemctl restart farm.service
+            systemctl status farm.service
