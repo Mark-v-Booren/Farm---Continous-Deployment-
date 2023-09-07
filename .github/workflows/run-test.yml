@@ -27,22 +27,44 @@ jobs:
   #         host: ${{ secrets.SSH_HOST }}
   #         key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+  # deploy:
+  #   needs: run-test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: SSH remote commands
+  #       uses: appleboy/ssh-action@v0.1.4
+  #       with:
+  #         HOST: "${{ secrets.HOST }}"
+  #         USERNAME: "${{ secrets.USERNAME }}"
+  #         PORT: "${{ secrets.PORT }}"
+  #         KEY: "${{ secrets.SSH_PRIVATE_KEY }}"
+
+        
+  #         script: |
+  #           cd /home/farm/
+  #           git pull
+  #           systemctl restart farm
+  #           systemctl status farm
+
+ 
   deploy:
     needs: run-test
     runs-on: ubuntu-latest
+
     steps:
-      - name: SSH remote commands
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: SSH Remote Commands
         uses: appleboy/ssh-action@v0.1.4
         with:
-          HOST: "${{ secrets.HOST }}"
-          USERNAME: "${{ secrets.USERNAME }}"
-          PORT: "${{ secrets.PORT }}"
-          KEY: "${{ secrets.SSH_PRIVATE_KEY }}"
-
-        
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
-            cd /home/farm/
-            git pull
-            systemctl restart farm
-            systemctl status farm
-                  
+            # Your deployment commands go here
+            # For example, you might run a script or specific commands
+            # to deploy your application on the VPS.
+            echo "Deploying to VPS..."
+            # Add your deployment commands here
