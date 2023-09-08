@@ -29,8 +29,7 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             port: ${{ secrets.PORT }}
             debug: true
-            script: echo "hello" | 
-              cd /home/farm
+            script: cd /home/farm
               git pull origin main
               systemctl restart farm.service
               systemctl status farm
