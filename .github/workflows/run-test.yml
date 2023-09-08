@@ -52,14 +52,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
       - name: SSH Remote Commands
         uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{ secrets.HOST }}
-          username: root
+          username: $ {{secrets.USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
@@ -67,8 +65,8 @@ jobs:
             pwd
             whoami
             git pull origin main
-            systemctl restart final-assignment.service
-            systemctl status final-assignment
+            systemctl restart farm.service
+            systemctl status farm
             # Your deployment commands go here
             # For example, you might run a script or specific commands
             # to deploy your application on the VPS.
