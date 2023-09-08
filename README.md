@@ -24,7 +24,7 @@ def test_mice(client):
 Problemen:
 
 1:  Gunicorn: 
-Met Gunicorn ben ik tegen meerdere moeilijkheden aangelopen. In de module kwamen veel concepten snel achter elkaar. : het navigeren tussen de locale pc (VS code) naar github en naar de VPS was in het begin verwarrend en ik heb er daarom echt de tijd voor genomen. In sommige opdrachten werk je vanuit BASH maar andere opdrachten vanuit Github. 
+Met Gunicorn ben ik tegen meerdere moeilijkheden aangelopen. Het navigeren tussen de locale pc (VS code) en Git Bash via Github en naar de VPS was in het begin veel zoeken. I
 Uiteindelijk heb ik de lesstof keer op keer gelezen en stap voor stap uitgevoerd. De stap via Nginx i.c.m Gunicorn ging snel maar ik moest vaker systemctl restart farm gebruiken om de site in de lucht te krijgen of te houden.
  
 2:  GITHUB : 
@@ -41,12 +41,16 @@ git pull --rebase
 In het begin van het opzetten en uitvoeren van de opdrachten in de map /var/www/html ging er veel fout op mijn local.host o.a. poort :80 
 Mijn browser was BRAVE en hier bleken veel security plan instellingen tegen te werken. 
 De aanapssingen in de default pagine ( ip ) adres van de VPS werkte wél goed dus moest het probleem in mijn pc en instellingen zitten. 
-Na lang zoeken bleek ook mijn firewall tóch aan te staan en werkte het uiteindelijk wel. Dit heeft meerdere dagen geduurd....
+Na lang zoeken bleek ook mijn firewall tóch aan te staan en werkte het uiteindelijk wel. Dit heeft meerdere dagen geduurd.
+
+4: De Secrets heb ik vaker opnieuw moeten uitzoeken omdat ik niet begreep dat in de Secrets ook de Host , Port en Username moesten worden gewaarborgd .
+Deze heb ik vaker via de workflow aangepast en zo kwam ik na elke deploy test stap voor stap naar de uiteindelijke authorisatie.
+
 
 De CD-opdracht opdracht was een echte uitdaging: 
-Het werken via VPS is erg fascinerend en een vd leukste onderdelen van de BACK-end opleiding.
-Het overzicht behouden in de opdrachten kostte veel tijd omdat veel ingewikkelede stappen zich snel opvolgden. 
-Wanneer de oplossing via je Bash, VPS óf github zelf was af en toe een echte puzzel. 
+Het werken via VPS is erg fascinerend en een vd leukste onderdelen van de BACK-End opleiding.
+Het overzicht behouden in de opdrachten kostte veel tijd omdat meerdere ingewikkelede stappen zich snel opvolgden. 
+De combinatie van de Id_isra en Id_isra.pub heb ik een paar keer verkeerd om gebruikt waardoor meerdere erros lang onopgelost bleven. 
 Uiteindelijk is het superfascinerend dat het werkt en achteraf (altijd) ook nog logisch.
 
 
