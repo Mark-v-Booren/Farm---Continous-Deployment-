@@ -54,9 +54,12 @@ Het overzicht behouden in de opdrachten kostte veel tijd omdat meerdere ingewikk
 De combinatie van de Id_isra en Id_isra.pub heb ik een paar keer verkeerd om gebruikt waardoor meerdere erros lang onopgelost bleven. 
 Uiteindelijk is het superfascinerend dat het werkt en achteraf (altijd) ook nog logisch.
 
+see the pipelines working: 
 
 http://161.35.19.72
+
 http://161.35.19.72/cow
+
 http://161.35.19.72/mice
 
 
