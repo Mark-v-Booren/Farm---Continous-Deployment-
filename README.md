@@ -49,9 +49,9 @@ Deze heb ik vaker via de workflow aangepast en zo kwam ik na elke deploy test st
 
 
 De CD-opdracht opdracht was een echte uitdaging: 
-Het werken via VPS is erg fascinerend en een vd leukste onderdelen van de BACK-End opleiding.
-Het overzicht behouden in de opdrachten kostte veel tijd omdat meerdere ingewikkelede stappen zich snel opvolgden. 
-De combinatie van de Id_isra en Id_isra.pub heb ik een paar keer verkeerd om gebruikt waardoor meerdere erros lang onopgelost bleven. 
+Het werken via VPS is erg fascinerend en een vd leukste onderdelen van de Back-End opleiding.
+Het overzicht behouden in de opdrachten kostte veel tijd omdat meerdere ingewikkelde stappen zich snel opvolgden. 
+De combinatie van de Id_isra en Id_isra.pub heb ik een paar keer verkeerd om gebruikt waardoor meerdere erros onopgelost bleven. 
 Uiteindelijk is het superfascinerend dat het werkt en achteraf (altijd) ook nog logisch.
 
 see the pipelines working: 
