@@ -1,6 +1,6 @@
 # Continous Deployment Pipeline
 
-My final Back-End assignment:  
+Back-End assignment:  
 
 Creating and provisioning a server at Digital Ocean;
 Connecting to a Linux server over SSH;
